@@ -1,3 +1,155 @@
-body {
-  background-color: blue;
+/* font */
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
+
+/* VARIABLES */
+:root {
+  --color-light-1: #c0ddd8;
+  --color-light-2: #97c6be;
+  --color-light-3: #58a397;
+  --color-light-4: #2e8c7d;
+  --primary-color-light: #eaf4f2;
+  --primary-color-dark: #17463f;
+  --primary-color-medium: #257064;
+}
+
+/* body {
+  background-color: blue;
+} */
+
+/* FIRST SECTION */
+nav {
+  border: 2px solid red;
+  height: 2rem;
+  background-color: var(--primary-color-light);
+}
+
+ul {
+  border: 2px solid brown;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+li {
+  list-style: none;
+}
+
+.logo {
+  flex: 7;
+  padding: 0 0 0 2rem;
+}
+
+.nav-links {
+  border: 2px solid burlywood;
+  display: flex;
+  justify-content: space-around;
+  flex: 3;
+}
+
+.intro {
+  height: 70vh;
+  max-width: 80%;
+  margin: 0 auto;
+  background-color: var(--primary-color-light);
+  display: flex;
+  flex-direction: column;
+  border: 2px solid green;
+}
+
+.intro-left,
+.intro-right {
+  border: 2px solid pink;
+  flex: 1;
+}
+
+.intro-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-right img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  border-right: 5px solid var(--primary-color-medium);
+  border-top: 5px solid var(--primary-color-medium);
+}
+
+.intro-left h1 {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  color: var(--primary-color-dark);
+}
+
+.intro-left h3 {
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+/* END OF FIRST SECTION */
+/* START OF TECH SECTION */
+#tech-stack {
+  height: 80vh;
+  border: 2px solid lime;
+}
+
+.section-sub {
+  text-align: center;
+  color: var(--primary-color-dark);
+  font-size: 2rem;
+  font-family: "Open Sans";
+  margin-top: 2rem;
+}
+
+.line-divider {
+  width: 10rem;
+  height: 3px;
+  background-color: var(--color-light-3);
+  margin: 0 auto;
+}
+
+.tech-list {
+  width: 80%;
+  height: 80%;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.tech-item {
+  flex: 1;
+  border: 2px solid orange;
+  border-radius: 5px;
+}
+/* END OF TECH SECTION */
+/* START OF HOBBIES SECTION */
+#hobbies {
+  height: 100vh;
+  border: 2px solid brown;
+}
+
+.hobbies-list {
+  height: 60vh;
+  border: 2px solid aquamarine;
+}
+/* END OF HOBBIES SECTION */
