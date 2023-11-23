@@ -10,6 +10,7 @@
 
 /* VARIABLES */
 :root {
+  --color-white: #fff;
   --color-light-1: #c0ddd8;
   --color-light-2: #97c6be;
   --color-light-3: #58a397;
@@ -23,11 +24,15 @@
   background-color: blue;
 } */
 
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
 /* FIRST SECTION */
 nav {
   border: 2px solid red;
-  height: 2rem;
-  background-color: var(--primary-color-light);
+  height: 4rem;
+  background-color: var(--color-white);
 }
 
 ul {
@@ -42,6 +47,10 @@ ul {
 
 li {
   list-style: none;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 
 .logo {
@@ -57,35 +66,35 @@ li {
 }
 
 .intro {
-  height: 70vh;
+  height: 50vh;
   max-width: 80%;
   margin: 0 auto;
-  background-color: var(--primary-color-light);
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   border: 2px solid green;
 }
 
-.intro-left,
 .intro-right {
   border: 2px solid pink;
-  flex: 1;
+  flex: 1.5;
 }
 
-.intro-left {
+.intro-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.intro-right {
+.intro-left {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: 2;
 }
 
-.intro-right img {
+.intro-left img {
   height: 250px;
   width: 250px;
   border-radius: 50%;
@@ -93,18 +102,45 @@ li {
   border-top: 5px solid var(--primary-color-medium);
 }
 
-.intro-left h1 {
+.intro-right h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--primary-color-dark);
 }
 
-.intro-left h3 {
+.intro-subheading h3 {
   font-family: "Open Sans";
   font-weight: 300;
+  font-size: 2rem;
+}
+
+.intro-subheading span {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  border-bottom: 4px solid var(--color-light-4);
 }
 /* END OF FIRST SECTION */
+
+/* START OF MOTTO SECTION */
+.motto {
+  height: 20vh;
+  border: 2px solid magenta;
+  background-color: var(--primary-color-medium);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.motto h3 {
+  color: var(--color-light-1);
+  letter-spacing: 2px;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+/* END OF MOTTO SECTION */
 /* START OF TECH SECTION */
 #tech-stack {
   height: 80vh;
