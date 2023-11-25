@@ -63,7 +63,7 @@ li {
   /* border: 2px solid burlywood; */
   display: flex;
   justify-content: space-around;
-  flex: 4;
+  flex: 5;
 }
 
 .nav-links a {
@@ -81,6 +81,14 @@ li {
   /* border: 2px solid green; */
 }
 
+@media screen and(min-width: 100px) {
+  .intro {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+  }
+}
 .intro-right {
   /* border: 2px solid pink; */
   flex: 3;
@@ -93,6 +101,11 @@ li {
   justify-content: center;
 }
 
+@media screen and(min-width: 1000) {
+  .intro-right h1 {
+    font-size: 4rem;
+  }
+}
 .intro-left {
   display: flex;
   justify-content: center;
@@ -128,6 +141,12 @@ li {
   border-bottom: 4px solid var(--color-light-4);
   color: var(--color-light-4);
 }
+
+@media screen and(min-width:1000px) {
+  .intro-subheading h3 {
+    font-size: 2rem;
+  }
+}
 /* END OF FIRST SECTION */
 
 /* START OF MOTTO SECTION */
@@ -141,10 +160,20 @@ li {
   align-items: center;
 }
 
+@media screen and(min-width: 768px) {
+  .motto {
+    padding: 2rem;
+    height: 30vh;
+  }
+  .motto p {
+    font-size: 1.5rem;
+  }
+}
+
 .motto p {
   color: var(--color-light-1);
   letter-spacing: 1px;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 300;
   line-height: 1.7;
 }
@@ -157,6 +186,11 @@ li {
   background-color: var(--primary-color-light);
 }
 
+@media screen and(min-width:1000px) {
+  #tech-stack {
+    height: 80vh;
+  }
+}
 .section-sub {
   text-align: center;
   color: var(--primary-color-dark);
@@ -240,7 +274,12 @@ li {
   gap: 2rem;
   padding: 6rem 0;
 }
-
+@media screen and(min:1000px) {
+  .hobbies-list {
+    padding: 4rem;
+    flex-direction: row;
+  }
+}
 .hobby {
   border-radius: 5px;
   width: 60%;
