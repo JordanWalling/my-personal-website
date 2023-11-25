@@ -80,15 +80,15 @@ li {
   flex-direction: column;
   /* border: 2px solid green; */
 }
-
-@media screen and(min-width: 100px) {
+@media screen and (min-width: 1000px) {
   .intro {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 2rem auto;
+    margin: auto;
   }
 }
+
 .intro-right {
   /* border: 2px solid pink; */
   flex: 3;
@@ -101,11 +101,12 @@ li {
   justify-content: center;
 }
 
-@media screen and(min-width: 1000) {
-  .intro-right h1 {
+@media screen and (min-width: 1000px) {
+  .intro-right .intro-heading h1 {
     font-size: 4rem;
   }
 }
+
 .intro-left {
   display: flex;
   justify-content: center;
@@ -142,7 +143,7 @@ li {
   color: var(--color-light-4);
 }
 
-@media screen and(min-width:1000px) {
+@media screen and (min-width: 1000px) {
   .intro-subheading h3 {
     font-size: 2rem;
   }
@@ -169,13 +170,23 @@ li {
     font-size: 1.5rem;
   }
 }
-
 .motto p {
   color: var(--color-light-1);
   letter-spacing: 1px;
   font-size: 2rem;
   font-weight: 300;
   line-height: 1.7;
+}
+
+@media screen and (min-width: 1000px) {
+  .motto {
+    padding: 2rem;
+    height: 38vh;
+  }
+  .motto p {
+    font-size: 1.5rem;
+    line-height: 2;
+  }
 }
 
 /* END OF MOTTO SECTION */
@@ -186,7 +197,7 @@ li {
   background-color: var(--primary-color-light);
 }
 
-@media screen and(min-width:1000px) {
+@media screen and (min-width: 1000px) {
   #tech-stack {
     height: 80vh;
   }
@@ -274,7 +285,7 @@ li {
   gap: 2rem;
   padding: 6rem 0;
 }
-@media screen and(min:1000px) {
+@media screen and (min: 1000px) {
   .hobbies-list {
     padding: 4rem;
     flex-direction: row;
@@ -309,6 +320,12 @@ li {
 
 .fa-solid {
   color: var(--primary-color-medium);
+}
+
+@media screen and (min-width: 1000px) {
+  .hobby {
+    width: 50%;
+  }
 }
 /* END OF HOBBIES SECTION */
 /* START OF FOOTER SECTION */
