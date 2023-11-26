@@ -18,6 +18,7 @@
   --primary-color-light: #eaf4f2;
   --primary-color-dark: #17463f;
   --primary-color-medium: #257064;
+  --box-s: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* body {
@@ -66,11 +67,28 @@ li {
   flex: 5;
 }
 
-.nav-links a {
+.nav-links li a {
   text-decoration: none;
   color: var(--primary-color-dark);
   font-weight: 500;
+  position: relative;
 }
+.nav-links li a:before {
+  content: "";
+  width: 0;
+  height: 5px;
+  background-color: var(--color-light-4);
+  position: absolute;
+  top: 120%;
+  left: 0;
+  transition: all 1s;
+}
+
+.nav-links li a:hover:before {
+  width: 100%;
+  transform: translateX(0);
+}
+
 .intro {
   height: 60vh;
   max-width: 80%;
@@ -139,9 +157,16 @@ li {
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 1px;
-  border-bottom: 4px solid var(--color-light-4);
+  display: inline-block;
+  border-bottom: 2px solid var(--color-light-3);
   color: var(--color-light-4);
 }
+
+/* .intro:hover {
+  .intro-subheading span::after {
+    width: 100%;
+  }
+} */
 
 @media screen and (min-width: 1000px) {
   .intro-subheading h3 {
@@ -202,6 +227,7 @@ li {
     height: 80vh;
   }
 }
+
 .section-sub {
   text-align: center;
   color: var(--primary-color-dark);
@@ -237,6 +263,12 @@ li {
   background-color: var(--color-white);
 }
 
+.tech-item:hover {
+  box-shadow: var(--box-s);
+  scale: 1.1;
+  transition: all 1s;
+}
+
 .tech-item article {
   width: 100%;
   height: 100%;
@@ -244,6 +276,12 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media screen and (min-width: 1000px) {
+  .tech-item {
+    width: 28%;
+  }
 }
 .icon {
   /* border: 2px solid red; */
@@ -285,10 +323,12 @@ li {
   gap: 2rem;
   padding: 6rem 0;
 }
-@media screen and (min: 1000px) {
+@media screen and (min-width: 1000px) {
   .hobbies-list {
-    padding: 4rem;
     flex-direction: row;
+    align-items: stretch;
+    padding: 4rem;
+    gap: 4rem;
   }
 }
 .hobby {
@@ -302,8 +342,18 @@ li {
   background-color: var(--color-white);
 }
 
+.hobby:hover {
+  box-shadow: var(--box-s);
+  scale: 1.1;
+  .hobby-image img {
+    opacity: 1;
+  }
+  transition: all 1s;
+}
+
 .hobby-image img {
   width: 100%;
+  opacity: 0.5;
 }
 
 .hobby-title h4 {
@@ -325,6 +375,15 @@ li {
 @media screen and (min-width: 1000px) {
   .hobby {
     width: 50%;
+    height: 26rem;
+    padding: 1rem;
+  }
+  .hobby-title h4 {
+    font-size: 2rem;
+  }
+
+  .hobby-desc p {
+    font-size: 1.25rem;
   }
 }
 /* END OF HOBBIES SECTION */
