@@ -57,7 +57,9 @@ li {
 .logo {
   flex: 6;
   padding: 0 0 0 2rem;
-  font-weight: 500;
+  font-weight: 200;
+  opacity: 0.5;
+  letter-spacing: 2px;
 }
 
 .nav-links {
@@ -73,20 +75,23 @@ li {
   font-weight: 500;
   position: relative;
 }
+
 .nav-links li a:before {
-  content: "";
-  width: 0;
-  height: 5px;
-  background-color: var(--color-light-4);
   position: absolute;
-  top: 120%;
-  left: 0;
+  content: "";
+  top: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0%;
+  background-color: var(--color-light-3);
+  transform: translateY(40px);
   transition: all 1s;
 }
 
 .nav-links li a:hover:before {
   width: 100%;
   transform: translateX(0);
+  transform: translateY(40px);
 }
 
 .intro {
@@ -200,7 +205,7 @@ li {
   letter-spacing: 1px;
   font-size: 2rem;
   font-weight: 300;
-  line-height: 1.7;
+  line-height: 2.5;
 }
 
 @media screen and (min-width: 1000px) {
