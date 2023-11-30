@@ -296,6 +296,32 @@ li {
   align-items: center;
 }
 
+.tech-item:nth-child(1):hover {
+  .fa-html5 {
+    color: orange;
+  }
+  .tech-title h3 {
+    color: orange;
+  }
+}
+.tech-item:nth-child(2):hover {
+  .fa-css3-alt {
+    color: blue;
+  }
+  .tech-title h3 {
+    color: blue;
+  }
+}
+.tech-item:nth-child(3):hover {
+  .fa-js {
+    color: yellow;
+    background-color: black;
+  }
+  .tech-title h3 {
+    color: black;
+  }
+}
+
 .fa-brands {
   color: var(--primary-color-medium);
 }
