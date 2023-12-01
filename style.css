@@ -326,6 +326,69 @@ li {
 }
 
 /* END OF HOBBIES SECTION */
+/* START OF CONTACT FORM SECTION */
+
+.contact-form-section {
+  height: 100vh;
+  background-color: var(--color-light-2);
+}
+
+.form {
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--primary-color-light);
+  height: 60%;
+  padding: 2rem;
+  border-radius: 10px;
+  display: block;
+}
+
+.form-section {
+  margin-bottom: 1rem;
+}
+.form label {
+  font-size: 3rem;
+}
+.form input {
+  display: block;
+  width: 100%;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.form textarea {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 11px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  height: 25rem;
+}
+
+.form textarea:placeholder-shown {
+  font-size: 1.5rem;
+}
+
+.form input,
+.form textarea {
+  padding: 5px;
+  border: transparent;
+}
+
+.btn {
+  width: 100%;
+  height: 4rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
+  background-color: var(--color-light-4);
+  color: var(--color-white);
+  border-radius: 5px;
+  border: transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+/* END OF CONTACT FORM SECTION */
 /* START OF FOOTER SECTION */
 footer {
   height: 10rem;
