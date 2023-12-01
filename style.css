@@ -1,7 +1,3 @@
-/* font */
-/* font-family: 'Open Sans', sans-serif; */
-/* font-family: 'Poppins', sans-serif; */
-
 * {
   padding: 0;
   margin: 0;
@@ -20,10 +16,6 @@
   --primary-color-medium: #257064;
   --box-s: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
-
-/* body {
-  background-color: blue;
-} */
 
 html {
   font-family: "Open Sans", sans-serif;
@@ -95,7 +87,7 @@ li {
 }
 
 .intro {
-  height: 60vh;
+  height: 50vh;
   max-width: 80%;
   margin: 0 auto;
   background-color: var(--color-white);
@@ -103,31 +95,13 @@ li {
   flex-direction: column;
   /* border: 2px solid green; */
 }
-@media screen and (min-width: 1000px) {
-  .intro {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-}
-
-.intro-right {
-  /* border: 2px solid pink; */
-  flex: 3;
-}
 
 .intro-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 1000px) {
-  .intro-right .intro-heading h1 {
-    font-size: 4rem;
-  }
+  flex: 2;
 }
 
 .intro-left {
@@ -145,10 +119,10 @@ li {
   border-top: 5px solid var(--primary-color-medium);
 }
 
-.intro-right h1 {
+.intro-right .intro-heading h1 {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  font-size: 6rem;
+  font-size: 4rem;
   color: var(--primary-color-dark);
 }
 
@@ -167,56 +141,24 @@ li {
   color: var(--color-light-4);
 }
 
-/* .intro:hover {
-  .intro-subheading span::after {
-    width: 100%;
-  }
-} */
-
-@media screen and (min-width: 1000px) {
-  .intro-subheading h3 {
-    font-size: 2rem;
-  }
-}
 /* END OF FIRST SECTION */
 
 /* START OF MOTTO SECTION */
 .motto {
   padding: 6rem;
-  height: 40vh;
+  height: 28vh;
   /* border: 2px solid magenta; */
   background-color: var(--primary-color-medium);
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-@media screen and(min-width: 768px) {
-  .motto {
-    padding: 2rem;
-    height: 30vh;
-  }
-  .motto p {
-    font-size: 1.5rem;
-  }
-}
 .motto p {
   color: var(--color-light-1);
   letter-spacing: 1px;
   font-size: 2rem;
   font-weight: 300;
-  line-height: 2.5;
-}
-
-@media screen and (min-width: 1000px) {
-  .motto {
-    padding: 2rem;
-    height: 38vh;
-  }
-  .motto p {
-    font-size: 1.5rem;
-    line-height: 2;
-  }
+  line-height: 2;
 }
 
 /* END OF MOTTO SECTION */
@@ -225,12 +167,6 @@ li {
   height: 40vh;
   /* border: 2px solid lime; */
   background-color: var(--primary-color-light);
-}
-
-@media screen and (min-width: 1000px) {
-  #tech-stack {
-    height: 80vh;
-  }
 }
 
 .section-sub {
@@ -283,11 +219,6 @@ li {
   justify-content: space-around;
 }
 
-@media screen and (min-width: 1000px) {
-  .tech-item {
-    width: 28%;
-  }
-}
 .icon {
   /* border: 2px solid red; */
 
@@ -338,11 +269,9 @@ li {
   font-weight: 600;
   color: var(--primary-color-medium);
 }
+
 /* END OF TECH SECTION */
 /* START OF HOBBIES SECTION */
-#hobbies {
-  /* border: 2px solid brown; */
-}
 
 .hobbies-list {
   width: 100%;
@@ -354,14 +283,7 @@ li {
   gap: 2rem;
   padding: 6rem 0;
 }
-@media screen and (min-width: 1000px) {
-  .hobbies-list {
-    flex-direction: row;
-    align-items: stretch;
-    padding: 4rem;
-    gap: 4rem;
-  }
-}
+
 .hobby {
   border-radius: 5px;
   width: 60%;
@@ -403,20 +325,6 @@ li {
   color: var(--primary-color-medium);
 }
 
-@media screen and (min-width: 1000px) {
-  .hobby {
-    width: 50%;
-    height: 26rem;
-    padding: 1rem;
-  }
-  .hobby-title h4 {
-    font-size: 2rem;
-  }
-
-  .hobby-desc p {
-    font-size: 1.25rem;
-  }
-}
 /* END OF HOBBIES SECTION */
 /* START OF FOOTER SECTION */
 footer {
@@ -431,3 +339,124 @@ footer p {
   font-size: 1.7rem;
 }
 /* END OF FOOTER SECTION */
+
+/* =========== START OF MEDIA QUERY SECTION =============== */
+
+/* INTRO */
+@media screen and (min-width: 1000px) {
+  nav li {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .intro {
+    height: 50vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .intro {
+    height: 80vh;
+  }
+  .intro-right .intro-heading h1 {
+    font-size: 4rem;
+  }
+}
+
+/* MOTTO SECTION */
+
+@media screen and (max-width: 767px) {
+  .motto {
+    padding: 2.5rem;
+    height: 40vh;
+  }
+
+  .motto p {
+    font-size: 1.25rem;
+    line-height: 2;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .motto {
+    padding: 2rem;
+    height: 36vh;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .motto p {
+    font-size: 2rem;
+    line-height: 2;
+    max-width: 800px;
+  }
+}
+
+/* TECH STACK */
+
+@media screen and (min-width: 1000px) {
+  #tech-stack {
+    height: 80vh;
+  }
+}
+
+/* TECH ITEM */
+
+@media screen and (min-width: 768px) {
+  .tech-item {
+    width: 25%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .tech-item {
+    width: 28%;
+  }
+}
+
+/* HOBBIES LIST */
+
+@media screen and (min-width: 768px) {
+  .hobbies-list {
+    padding: 2.5rem;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hobbies-list {
+    flex-direction: row;
+    align-items: stretch;
+    padding: 4rem;
+    gap: 4rem;
+  }
+}
+
+/* HOBBY */
+
+@media screen and (min-width: 768px) {
+  .hobby {
+    width: 50%;
+    height: 26rem;
+    padding: 1rem;
+  }
+  .hobby-title h4 {
+    font-size: 2rem;
+  }
+
+  .hobby-desc p {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .hobby {
+    width: 50%;
+    height: 26rem;
+    padding: 1rem;
+  }
+  .hobby-title h4 {
+    font-size: 2rem;
+  }
+
+  .hobby-desc p {
+    font-size: 1.25rem;
+  }
+}
