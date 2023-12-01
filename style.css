@@ -355,6 +355,15 @@ footer p {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .intro-right .intro-heading h1 {
+    font-size: 4rem;
+  }
+  /* .intro {
+    height: 60vh;
+  } */
+}
+
 @media screen and (min-width: 1000px) {
   .intro {
     height: 80vh;
@@ -380,13 +389,13 @@ footer p {
 @media screen and (min-width: 1000px) {
   .motto {
     padding: 2rem;
-    height: 36vh;
+    height: 40vh;
   }
 }
 
 @media screen and (min-width: 1000px) {
   .motto p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 2;
     max-width: 800px;
   }
