@@ -536,20 +536,30 @@ footer p {
 /* CONTACT FORM SECTION */
 
 @media screen and (min-width: 1000px) {
+  .contact-form-section {
+    height: 150vh;
+    background-color: var(--color-light-2);
+  }
   .form {
-    max-width: 800px;
+    max-width: 600px;
     height: 80vh;
     margin-bottom: 2rem;
   }
   .form label {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .form textarea {
     display: block;
     margin-bottom: 1rem;
-    font-size: 11px;
+    font-size: 1.25rem;
     font-family: "Open Sans", sans-serif;
     width: 100%;
-    height: 20rem;
+    height: 10rem;
+  }
+  .form input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    font-size: 1.25rem;
   }
 }
